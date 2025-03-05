@@ -1,4 +1,5 @@
 Hello, my name is Paul.
 I like drinking tea and eating chocolate biscuits.
-I am enjoying teaching IBI1 in person again 
+I am enjoying absorbing new knowledge in the IBI1 course. 
 I am happy that I can push my repo from Visual Studio Code to GitHub
+Welcome to my personal website https://paulren0519.github.io/ 
