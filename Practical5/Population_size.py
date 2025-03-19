@@ -12,12 +12,16 @@ print("Sorted population of UK countries:", sorted_uk,
 
 #import the package of drawing
 import matplotlib.pyplot as plt
+
+#set the lable names of the axis
 labels_uk = ['England', 'Wales', 'Northern Ireland', 'Scotland']
 explode = (0, 0, 0, 0.2)
+
+#plot the graph by using the pie chart
 plt.pie(uk_contries, 
         explode = explode, 
         labels = labels_uk, 
-        autopct = '%1.1f%%', 
+        autopct = '%1.2f%%', 
         shadow = False, 
         startangle = 90)
 
@@ -31,9 +35,9 @@ plt.pie(zj_neibour_provines,
         explode = explode, 
         labels = labels_ch, 
         autopct = '%1.1f%%', 
-        shadow = True, 
+        shadow = False, 
         startangle = 90)
 
 #make sure the pie is a circle
-plt.axis('equal')
+plt.axis("equal")
 plt.show()
