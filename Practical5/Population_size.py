@@ -1,43 +1,35 @@
-#store the population sizes for the UK and Zhejiang-neiphbouring provines
-uk_contries = [57.11, 3.13, 1.91, 5.45]
-zj_neibour_provines = [65.77, 41.88, 45.28, 61.27, 85.15]
+# store the population sizes for the UK and Zhejiang-neighbouring provinces
+uk_countries = [57.11, 3.13, 1.91, 5.45]
+zj_neighbour_provinces = [65.77, 41.88, 45.28, 61.27, 85.15]
 
-#sort the contries of the uk and provines of china
-sorted_uk = sorted(uk_contries)
-sorted_zj = sorted(zj_neibour_provines)
+# sort the countries of the uk and provinces of china
+sorted_uk = sorted(uk_countries)
+sorted_zj = sorted(zj_neighbour_provinces)
 
-#show the sorted population
+# show the sorted population
 print("Sorted population of UK countries:", sorted_uk,
-      "\nSorted population of some Chinese provines:", sorted_zj)
+      "\nSorted population of some Chinese provinces:", sorted_zj)
 
-#import the package of drawing
+# import the package of drawing
 import matplotlib.pyplot as plt
-
-#set the lable names of the axis
+import matplotlib.cm as cm
+# set the label names of the axis
 labels_uk = ['England', 'Wales', 'Northern Ireland', 'Scotland']
 explode = (0, 0, 0, 0.2)
 
-#plot the graph by using the pie chart
-plt.pie(uk_contries, 
-        explode = explode, 
-        labels = labels_uk, 
-        autopct = '%1.2f%%', 
-        shadow = False, 
-        startangle = 90)
+# use subplot to add two graph to one fiture
+fig, (ax1, ax2) = plt.subplots(1, 2)
 
-#make sure the pie is a circle
-plt.axis('equal')
-plt.show()
+# draw the first chart
+ax1.pie(sorted_uk, explode=explode, labels=labels_uk, autopct='%1.1f%%')
+ax1.set_title('UK Population')
 
+# define the chinese label
 labels_ch = ['Zhejiang', 'Fujian', 'Jiangxi', 'Anhui', 'Jiangsu']
-explode = (0, 0, 0, 0.2, 0)
-plt.pie(zj_neibour_provines, 
-        explode = explode, 
-        labels = labels_ch, 
-        autopct = '%1.1f%%', 
-        shadow = False, 
-        startangle = 90)
 
-#make sure the pie is a circle
-plt.axis("equal")
+# draw the second fiture
+ax2.pie(sorted_zj, labels=labels_ch, autopct='%1.1f%%')
+ax2.set_title('Chinese Provinces Population')
+
+plt.tight_layout()
 plt.show()
