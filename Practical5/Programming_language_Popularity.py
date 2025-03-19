@@ -19,10 +19,6 @@ import matplotlib.pyplot as plt
 languages = list(language_use.keys())
 percentages = list(language_use.values())
 
-#arange the average step length
-N = 5
-ind = np.arange(N)
-
 #set the width of the bar 
 width = 0.5
 
@@ -30,8 +26,8 @@ width = 0.5
 barplot = plt.bar(languages, percentages, width)
 plt.ylabel('Persentages')
 plt.title('Programming Language Popularity')
-plt.xticks(ind, languages)
-plt.yticks(np.arange(0, 100, 10))
+plt.xticks(languages)
+plt.yticks(np.arange(0, 80, 10))
 
 #show the graph
 plt.show()
@@ -42,4 +38,4 @@ required_language = "Python"
 if required_language.lower() in lower_languages:
     print(f"The percentage of {required_language} is {language_use[required_language]}%.")
 else:
-    print(f"Sorry, {required_language} is not included in the list.")
+    print(f"{required_language} is not included in the list.")
