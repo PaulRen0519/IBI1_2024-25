@@ -2,7 +2,8 @@ import re
 
 # input one of three splice donor (GTAG, GCAG, ATAC)
 combination = input("Please enter one of the GTAG, GCAG, ATAC: ")
-
+part1 = combination[:2]
+part2 = combination[2:]
 # consider when the user input anything out of the three combinations
 while combination not in ['GTAG', 'GCAG', 'ATAC']:
     print("Your input is not in the three combinations")
@@ -26,7 +27,8 @@ for line in infile:
         if current_seq:
             tata_count = len(tata_pattern.findall(current_seq))
             # find the point to cut 
-            splice_match = re.search(combination, current_seq)
+            
+            splice_match = re.search(rf'{part1}.*{part2}', current_seq)
             if splice_match and tata_count > 0:
                 gene_names = re.findall(r'gene:(\S+)', current_name)
                 if gene_names:
