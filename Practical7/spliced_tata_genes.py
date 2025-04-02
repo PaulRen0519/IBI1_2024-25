@@ -41,7 +41,7 @@ for line in infile:
     else:
         current_seq += line
 
-# 处理最后一个序列
+# deal with the last line
 if current_seq:
     tata_count = len(tata_pattern.findall(current_seq))
     splice_match = re.search(combination, current_seq)
