@@ -7,21 +7,37 @@ outfile = open('tata_genes.fa', 'w')
 
 # identify the TATAWAW sequence in the sequence
 current_seq = ""
-first_line = infile.readline()
-current_name_list = re.findall(r'gene:(\S*)', first_line)
-current_name = current_name_list.pop(0)
+current_name = ""
 
+# set a loop to read and rewrite every line
 for line in infile:
-    if line.startswith(">"):
-        if current_seq and re.search('TATA[AT]A[AT]', current_seq):
-            outfile.write(f">{current_name}\n")
-            outfile.write(current_seq + '\n')
-            current_name_list = re.findall(r'gene:(\S*)', line)
-            current_name = current_name_list.pop(0)
-            current_seq = ""
-    else:
-        current_seq += line.strip()
+        line = line.strip()
+        if line.startswith(">"):
+            
+            # first deal with current sequence
+            if current_seq and re.search('TATA[AT]A[AT]', current_seq):
 
-if current_seq and re.search('TATA[AT][AT]A', current_seq):
-        outfile.write(f">{current_name}\n")
-        outfile.write(current_seq + "\n")
+                gene_names = re.findall(r'gene:(\S+)', current_name)
+                if gene_names:
+                    current_gene_name = gene_names[0].replace('gene:', '')
+                    outfile.write(f">{current_gene_name}\n")
+                    for i in range(0, len(current_seq), 60):
+                        outfile.write(current_seq[i: i + 60] + "\n")
+            # update the name of gene
+            current_name = line
+            current_seq = ""
+        else:
+            current_seq += line
+
+# deal with the last sequence
+if current_seq and re.search('TATA[AT]A[AT]', current_seq):
+        
+        gene_names = re.findall(r'gene:(\S+)', current_name)
+        if gene_names:
+            current_gene_name = gene_names[0].replace('gene:', '')
+            outfile.write(f">{current_gene_name}\n")
+            for i in range(0, len(current_seq), 60):
+                    outfile.write(current_seq[i: i + 60] + "\n")
+
+infile.close()
+outfile.close()
