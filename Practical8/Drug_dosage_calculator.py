@@ -37,6 +37,11 @@ def calculator(weight, strength):
     if temp:
         return (weight * 15) / strength
 
+# example
+weight = 58
+strength = "120mg/5ml"
+recommended = calculator(weight, strength)
+print(f"weight: {weight}\nstrength: {strength}\nrecommanded_volume: {recommended}ml.")
 
 weight = input("Enter your weight in kg (10~100): ")
 strength = input("Choose one strength of paracetamol (120mg/5ml or 250mg/5ml): ")
