@@ -14,5 +14,6 @@ class patients:
 patient1 = patients("Doe", 30, "2024-01-01", "Allergic to peanuts")
 patient1.print_details()
 
+# for input personal ditails
 details = input("Enter the details of the student (eg. 'Doe', 30, '2024-01-01', 'Allergic to peanuts'): ")
 print(patients(details))
