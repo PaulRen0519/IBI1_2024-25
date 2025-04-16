@@ -2,6 +2,7 @@
 import re
 import datetime
 
+time1 = datetime.datetime.now()
 # imput the sequence, and find the GT to AG segments
 seq = 'ATGCAAGTGGTGTGTCTGTTCTGAGAGGGCCTAA'
 max_introns = re.findall(r'GT.*AG', seq)
@@ -14,4 +15,5 @@ max_lenth = len(max_intron)
 # after pop out the intron, append it in it again
 max_introns = max_introns.append(max_intron)
 print(max_lenth)
-print(str(datetime.datetime.now()))
+time2 = datetime.datetime.now()
+print(time2 - time1)
