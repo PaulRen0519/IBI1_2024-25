@@ -1,0 +1,35 @@
+What countries have recorded a DALys greater than 88000 in 1990
+
+Outcomes are as follow:
+                        Entity      DALYs
+180                     Angola   98087.44
+870               Burkina Faso   93405.79
+900                    Burundi  100716.55
+1050  Central African Republic  105411.10
+1830         Equatorial Guinea   94162.75
+1860                   Eritrea  115120.37
+1950                  Ethiopia  107283.27   
+2460                    Guinea   88486.15
+2490             Guinea-Bissau  100675.44
+3270                   Liberia  110283.22
+3420                    Malawi   97882.42
+3510                      Mali   97329.66
+3900                Mozambique   93511.33
+4140                     Niger  106064.27
+4920                    Rwanda   95641.65
+5280              Sierra Leone   94147.95
+5430                   Somalia  103211.37
+6210                    Uganda  102836.41
+6780                    Zambia   90310.81
+
+interpretation:
+The results show a list of countries with DALYs greater than 88,000 in 1999, 
+including Angola, Burkina Faso, Burundi, Central African Republic, Equatorial Guinea, 
+Eritrea, Ethiopia, Guinea, Guinea-Bissau, Liberia, Malawi, Mali, Mozambique, Niger, 
+Rwanda, Sierra Leone, Somalia, Uganda and Zambia. 
+DALYs values range from 98,687.44 in Angola to 90,310.81 in Zambia.
+
+All these contries were located in sub-Saharan Africa, indicating that this region was 
+propobaly the most infectious places in the world.
+And the possible reasons are (1) war and conflict, worsen disease outbreak; (2) poor and inadequate medical resources 
+
