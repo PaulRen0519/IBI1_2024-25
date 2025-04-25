@@ -26,7 +26,7 @@ Outcomes are as follow:
 6780                    Zambia   90310.81
 
 interpretation:
-The results show a list of countries with DALYs greater than 88,000 in 1999, 
+The results show a list of countries with DALYs greater than 88,000 in 1990, 
 including Angola, Burkina Faso, Burundi, Central African Republic, Equatorial Guinea, 
 Eritrea, Ethiopia, Guinea, Guinea-Bissau, Liberia, Malawi, Mali, Mozambique, Niger, 
 Rwanda, Sierra Leone, Somalia, Uganda and Zambia. 
