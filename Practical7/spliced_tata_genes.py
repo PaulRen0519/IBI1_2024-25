@@ -1,5 +1,7 @@
 import re
+import os
 
+os.chdir("Practical7")
 # input one of three splice donor (GTAG, GCAG, ATAC)
 combination = input("Please enter one of the GTAG, GCAG, ATAC: ")
 part1 = combination[:2]
