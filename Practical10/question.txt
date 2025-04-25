@@ -1,5 +1,8 @@
 What countries have recorded a DALys greater than 88000 in 1990
 
+solution:
+code from 52 to 58
+
 Outcomes are as follow:
                         Entity      DALYs
 180                     Angola   98087.44
@@ -21,9 +24,6 @@ Outcomes are as follow:
 5430                   Somalia  103211.37
 6210                    Uganda  102836.41
 6780                    Zambia   90310.81
-
-solution:
-code from 52 to 58
 
 interpretation:
 The results show a list of countries with DALYs greater than 88,000 in 1999, 
