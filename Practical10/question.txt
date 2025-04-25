@@ -22,6 +22,9 @@ Outcomes are as follow:
 6210                    Uganda  102836.41
 6780                    Zambia   90310.81
 
+solution:
+code from 52 to 58
+
 interpretation:
 The results show a list of countries with DALYs greater than 88,000 in 1999, 
 including Angola, Burkina Faso, Burundi, Central African Republic, Equatorial Guinea, 
