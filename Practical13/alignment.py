@@ -26,7 +26,6 @@ if len(human_seq) != len(mouse_seq):
 blosum62 = bl.BLOSUM(62)
 
 def calculate_score(seq1, seq2):
-    total_score = 0
     identity = 0
     scores = 0
     
