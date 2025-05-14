@@ -1,0 +1,29 @@
+• The	length	and	subcellular	localisation	of	the	human	SOD2	protein.	
+    
+    length = 222
+    subcellular localisation: Mitochondrion matrix
+
+• The	range	of	percentage	identities	in	the	reported	online	BLAST	results.
+
+    58.1% ~ 100%
+
+• The	alignment	score	and	percentage	of	identical	amino	acids	for	each	of	the	three	comparisons	that	you	performed	using	Python
+
+    P04179 vs P09671:
+        Score: 1097.0
+        Identity: 90.09%
+
+    P04179 vs random:
+        Score: -294.0
+        Identity: 4.05%
+
+    P09671 vs random:
+        Score: -287.0
+        Identity: 4.05%
+
+• A	statement	recording	which	of	these	two	sequences	are	most   closely	related.
+
+The two sequences that are most closely related are the human SOD2 protein sequence (P04179) and the mouse SOD2 protein sequence (P09671). 
+This conclusion is based on their high alignment score of 1097.0 and percentage identity of 90.09%, 
+which indicate a strong sequence similarity consistent with their shared function as superoxide dismutase 2 enzymes in the mitochondrial matrix of closely related mammalian species. 
+In contrast, comparisons with the random sequence yield negative alignment scores (-294.0 and -287.0) and a negligible percentage identity (4.05%), confirming a lack of relatedness.

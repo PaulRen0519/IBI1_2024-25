@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: record after how many times' operation will the two random number in the range 1 to 5 be equal 
+# Answer: record after how many times' operation will the two random number in the range 1 to 6 be equal 
 
 # Import libraries
 # randint allows drawing a random number,

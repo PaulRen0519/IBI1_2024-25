@@ -32,9 +32,7 @@ def calculate_score(seq1, seq2):
     
     # compare each amino acid
     for a1, a2 in zip(seq1, seq2):
-
         score = blosum62[a1][a2]
-
         scores += score
         if a1 == a2:
             identity += 1
