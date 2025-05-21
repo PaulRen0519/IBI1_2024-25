@@ -54,6 +54,7 @@ class GOTermHandler(xml.sax.ContentHandler):
         self._max_is_a_terms = {ont: ("", 0) for ont in ontologies}
     
     def startElement(self, tag, attributes):
+        # creat a startpoint
         self._current_tag = tag
         if tag == "term":
             self._namespace = ""
@@ -63,6 +64,7 @@ class GOTermHandler(xml.sax.ContentHandler):
             self._is_a_count += 1
     
     def endElement(self, tag):
+        # creat a endpoint
         if tag == "term":
             if self._namespace in ontologies:
                 self._is_a_counts[self._namespace] += self._is_a_count
@@ -72,6 +74,7 @@ class GOTermHandler(xml.sax.ContentHandler):
         self._current_tag = ""
     
     def characters(self, content):
+        # set the characters to extract
         if self._current_tag == "namespace":
             self._namespace += content
         elif self._current_tag == "name":
