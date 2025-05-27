@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 
 # total population
-N = 1000
+N = 10000
 # infection probability
 beta = 0.3
 # recover probability

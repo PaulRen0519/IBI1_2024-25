@@ -1,7 +1,9 @@
 # import necessary library
 import re
+import os
 
 # open the sourse file and creat the output file
+os.chdir("Practical7")
 infile = open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa', 'r')
 outfile = open('tata_genes.fa', 'w')
 

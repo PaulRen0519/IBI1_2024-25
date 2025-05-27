@@ -1,0 +1,16 @@
+This practical is overall challenging but attracting. 
+
+For task 1, I could easily follow the instraction and write effectvie code, though there were
+some errors exist. 
+
+However, for task 2, I couldn't fully understand. And I talk with my neighbor then found that we 
+had different understanding towards the task. So we asked teachers for help, and it turns out that
+I misunderstand the instraction. After discussion, I quickly comopleted the work.
+
+Task 3 is the most challenging yet most interesting at the same time. I followed the instraction to creat
+a 100x100 table and then ... I had no idea about what's next. I really didn't know how to check the eight 
+points around the infected person at all. So I asked GTP for help, and it gave me a useful way to think about.
+I felt that AI is really useful in some cases. 
+
+Overall, in this practical I harvested a lot. I communicated with classmates and teachers for help, and I got 
+a hand from AI as well. I have to admit that this practical is a bit more interesting than others so far. >.<

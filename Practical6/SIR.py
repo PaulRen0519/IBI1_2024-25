@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # set variables for each population
-N = 1000  # total population
+N = 10000  # total population
 I0 = 1  # initial infected population
 S0 = N - I0  # initial suspectible population
 R0 = 0  # initial recovered population

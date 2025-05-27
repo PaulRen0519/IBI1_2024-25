@@ -112,9 +112,9 @@ def main():
     
     # compare the time
     if dom_time < sax_time:
-        print(f"# DOM was faster by {sax_time - dom_time} seconds")
+        print(f"DOM was faster by {sax_time - dom_time} seconds")
     else:
-        print(f"# SAX was faster by {dom_time - sax_time} seconds")
+        print(f"SAX was faster by {dom_time - sax_time} seconds")
 
 if __name__ == "__main__":
     main()

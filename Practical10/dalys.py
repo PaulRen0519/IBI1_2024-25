@@ -47,6 +47,9 @@ else:
 
 plt.plot(uk.Year, uk.DALYs, 'b+')
 plt.xticks(uk.Year, rotation = -90)
+plt.xlabel("Year")
+plt.ylabel("DALYs")
+plt.title("UK's DALYs")
 plt.show()
 
 # solve another quesiton of which countries's DALYs is greater than 88000 in 1990
@@ -55,4 +58,7 @@ sel_row = row_1990[dalys_data["DALYs"] > 88000]
 print(sel_row[['Entity','DALYs']])
 plt.bar(sel_row["Entity"], sel_row["DALYs"])
 plt.xticks(sel_row["Entity"], rotation = -90)
+plt.xlabel("Countries")
+plt.ylabel("DALYs")
+plt.title("Contries with DALYs larger than 88000 in 1990")
 plt.show()
